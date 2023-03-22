@@ -1,0 +1,289 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius : 5px;
+    height : 100px;
+    width: auto;
+    background-color: antiquewhite;
+}
+
+.nav-items > ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-items > ul > li {
+    padding: 20px;
+}
+
+.links {
+    /* background-color: lightgreen;
+    border:1px solid black; */
+    padding:10px;
+    border-radius: 12px;
+    text-decoration: none;
+    color:black;
+}
+
+.logo {
+    width : 100px;
+    height : 100px;
+    border-radius : 15px;
+}
+
+.card {
+    width : 200px;
+    border: 1px solid lightgrey;
+    margin: 12px;
+    padding: 10px;
+    color: black;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.card > img {
+    width : 100%;
+}
+
+.restaraunt-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.search-container {
+    text-align: center;
+}
+
+.search-input {
+    width: 210px;
+    height : 30px;
+    margin-right: 50px;
+    border-radius: 12px;
+    padding-left:20px;
+}
+
+.search-button {
+    background-color : lightgreen;
+    height : 35px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.log-button {
+    background-color : lightgreen;
+    height : 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 25px;
+    width : 56px;
+    margin-right : 30px;
+}
+
+.search-button:hover {
+    background-color : greenyellow; 
+}
+.shimmer-card {
+    width : 200px;
+    height: 350px;
+    border: 1px solid lightgrey;
+    margin: 10px;
+    padding: 13px;
+}
+
+.shimmer-image {
+    width : 100%;
+    background-color: lightgrey;
+    height : 150px;
+    margin-bottom: 12px;
+}
+
+.shimmer-h2 {
+    width : 100%;
+    background-color: lightgrey;
+    height : 50px;
+    margin-bottom: 12px;
+}
+
+.shimmer-p {
+    width : 100%;
+    background-color: lightgrey;
+    height : 30px;
+    margin-bottom: 12px;
+}
+
+.shimmer-h4 {
+    width : 100%;
+    background-color: lightgrey;
+    height : 35px;
+    margin-bottom: 12px;
+}
+
+
+
+.menu {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin: 10px;
+}
+
+
+.menu-list1 {
+    display : flex;
+    flex-wrap: wrap;
+    border: 1px solid lightgrey;
+    padding: 12px;
+    height : 270px;
+    align-items: center;
+    background-color: black;
+    color : white;
+    margin-bottom : 30px;
+    border-radius: 12px;
+}
+
+.menu-img {
+    height : 250px;
+    width : 500px;
+    margin-left: 300px;
+    margin-right: 50px;
+    border-radius: 8px;
+}
+
+.menu-list2 {
+    border: 1px solid lightgrey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
+    /* background-color: antiquewhite; */
+    /* margin-left : 250px; */
+}
+
+.menuItems-img {
+    height : 150px;
+    width: 150px;
+    margin-left : 30px;
+    margin-right : 40px;
+    margin-top : 50px;
+    border-radius: 5px;
+}
+
+.item {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 30px;
+    height : 280px;
+    width : 650px;
+    border : 1px solid lightgrey;
+    background-color: white;
+    border-radius: 8px; 
+    margin:auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu-content {
+    width : 380px;
+    text-align: center;
+    padding-top : 15px;
+    /* background-color: aqua; */
+}
+
+
+.footer {
+    margin: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.shimmerMenu-1 {
+    width : 500px;
+    height: 590px;
+    border: 1px solid lightgrey;
+    padding: 12px;
+    margin-left : 100px;
+}
+
+.shimmerMenu-image {
+    width : 100%;
+    background-color: lightgrey;
+    height : 300px;
+    margin-bottom: 12px;
+}
+
+
+.shimmerMenu-2 {
+    border: 1px solid lightgrey;
+    height : 900px;
+    width : 455px;
+    padding: 12px;
+    margin-left : 250px;
+}
+
+.shimmer-data {
+    width : 100%;
+    background-color: lightgrey;
+    height : 900px;
+    margin-bottom: 12px;
+}
+
+.section {
+    border : 1px solid  lightgrey;
+    padding : 10px;
+    margin: 10px;
+}
+
+.instamart {
+    border : 1px solid  lightgrey;
+    padding : 10px;
+    margin: 10px;
+}
+
+.show-button {
+    margin-right:10px;
+}
+
+
+.add-button {
+    background-color : lightgreen;
+    height : 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left : 200px ;
+}
+
+.add-button:hover, .add-item:hover, .clear-button {
+    background-color : greenyellow; 
+}
+
+
+.add-item {
+    background-color : lightgreen;
+    height : 35px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cart {
+    text-align: center;
+}
+
+.cart-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clear-button {
+    background-color : lightgreen;
+    height : 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+}
