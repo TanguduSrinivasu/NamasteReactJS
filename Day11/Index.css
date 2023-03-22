@@ -1,0 +1,168 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.nav-items > ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-items > ul > li {
+    padding: 10px
+}
+
+.logo {
+    width : 100px;
+}
+
+.card {
+    width : 200px;
+    border: 1px solid lightgrey;
+    margin: 12px;
+    padding: 10px;
+    color: black;
+    height: 420px;
+}
+
+
+.card > img {
+    width : 100%;
+}
+
+.restaraunt-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.search-container {
+    text-align: center;
+}
+
+.search-input {
+    width: 210px;
+    height : 30px;
+    margin-right: 50px;
+    border-radius: 12px;
+    padding-left:20px;
+}
+
+.search-button {
+    background-color : lightgreen;
+    height : 35px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color : greenyellow; 
+}
+.shimmer-card {
+    width : 200px;
+    height: 410px;
+    border: 1px solid lightgrey;
+    margin: 10px;
+    padding: 13px;
+}
+
+.shimmer-image {
+    width : 100%;
+    background-color: lightgrey;
+    height : 100px;
+    margin-bottom: 12px;
+}
+
+.shimmer-h2 {
+    width : 100%;
+    background-color: lightgrey;
+    height : 50px;
+    margin-bottom: 12px;
+}
+
+.shimmer-h3 {
+    width : 100%;
+    background-color: lightgrey;
+    height : 170px;
+    margin-bottom: 12px;
+}
+
+.shimmer-h4 {
+    width : 100%;
+    background-color: lightgrey;
+    height : 35px;
+    margin-bottom: 12px;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.menu-list2 {
+    border: 1px solid lightgrey;
+    padding: 12px;
+}
+
+.menu-list1 {
+    border: 1px solid lightgrey;
+    padding: 12px;
+    height : 600px;
+}
+
+.footer {
+    margin: 10px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.shimmerMenu-card {
+    width : 500px;
+    height: 590px;
+    border: 1px solid lightgrey;
+    padding: 12px;
+}
+
+.shimmerMenu-image {
+    width : 100%;
+    background-color: lightgrey;
+    height : 300px;
+    margin-bottom: 12px;
+}
+
+
+.shimmerMenu-Menu {
+    border: 1px solid lightgrey;
+    height : 900px;
+    width : 455px;
+    padding: 12px;
+}
+
+.shimmer-data {
+    width : 100%;
+    background-color: lightgrey;
+    height : 900px;
+    margin-bottom: 12px;
+}
+
+.section {
+    border : 1px solid  lightgrey;
+    padding : 10px;
+    margin: 10px;
+}
+
+.instamart {
+    border : 1px solid  lightgrey;
+    padding : 10px;
+    margin: 10px;
+}
+
+.show-button {
+    margin-right:10px;
+}
