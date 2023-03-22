@@ -1,0 +1,41 @@
+{
+  "name": "day13",
+  "version": "1.0.0",
+  "description": "Day 13",
+  "main": "App.js",
+  "scripts": {
+    "start": "parcel Index.html",
+    "build": "parcel build Index.html",
+    "test": "jest",
+    "watch-test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanguduSrinivasu/NamsateReact.git"
+  },
+  "author": "Tangudu Srinivasu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanguduSrinivasu/NamsateReact/issues"
+  },
+  "homepage": "https://github.com/TanguduSrinivasu/NamsateReact#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "babel-jest": "^29.4.2",
+    "jest": "^29.4.2",
+    "jest-environment-jsdom": "^29.4.2",
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.7.0"
+  }
+}
