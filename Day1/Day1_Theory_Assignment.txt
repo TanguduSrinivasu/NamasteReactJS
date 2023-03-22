@@ -1,0 +1,258 @@
+(1) What is Emmet?
+“Emmet is a plug in for many popular text editors which greatly improves HTML & CSS workflow:”
+And Emmet does fulfill what they promise, you can use short expressions to generate HTML markup, CSS.
+The general way to write Emmet abbreviation is:
+tagName[series of expressions]
+Where tagName: is the HTML tag you want to generate
+Series of expressions will govern the markup that will be generated.
+
+(i) Generating HTML Skeleton:
+The first thing you would do when creating a HTML page is create the skeleton for it, that is type DOCTYPE, html,head, body tags.
+What it you could do all that with just 2 keys? Yeah Emmet let’s you do that.
+Just type ‘!` in the editor, it will show a pop up with the content that will be generated, press enter and there you have your HTML skeleton.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+
+(ii) Elements with text content inside them
+If you want to generate a div with text content inside them
+div{This is a div} = <div>This is a div</div>
+
+(iii) Nested elements
+To generate nested we will use ‘>’ operator
+ul>li = <ul>
+            <li></li>
+        </ul>
+
+(iv) Generate a list 3 li’s , each li has an anchor(a) tag
+ul>li*3>a
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+(v) If you wanted numbers inside your li’s you could use $ operator
+ul>li{$}*3
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+(vi) 4. What about classes and Id
+you can specify Id by using ‘#’ and classes by using ‘.’
+div#main.container.responsive
+<div id="main" class="container responsive"></div>
+
+(v) You can specify multiple classes but do remember that you can have only one id. If you specify two id’s using #, 
+    the 2nd id will override the first.
+div#main#main-body.container.responsive
+<div id="main-body" class="container responsive"></div>
+
+(vi) Generating Siblings.
+Let’s say you want to have a header tag, div tag, footer tag. What would you do?
+These are not nested so you cant use ‘>’
+To generate sibling use ‘+’ operator
+header+div+footer
+<header></header>
+<div></div>
+<footer></footer>
+
+(vii) 7. Grouping
+You can use ‘()’ operator to group complex abbreviations.
+div>(a>p>span+span)*3
+<div>
+    <a href="">
+        <p><span></span><span></span></p>
+    </a>
+    <a href="">
+        <p><span></span><span></span></p>
+    </a>
+    <a href="">
+        <p><span></span><span></span></p>
+    </a>
+</div>
+
+
+(viii) CSS
+You can also use Emmet for CSS. This can be very helpful as you don’t have to remember long property names, 
+use short expressions to assign values to properties. Let’s look at some examples.
+ex :Margin of 10 on all sides
+    m10–10–10–10
+    margin: 10px 10px 10px 10px;
+ex :same thing can be done for padding
+    p10–10–10–10
+    padding: 10px 10px 10px 10px;
+
+
+
+
+
+(2) Difference between a Library and Framework?
+
+Both libraries and frameworks are reusable code written by someone else. 
+Their purpose is to help you solve common problems in easier ways.
+
+We can use a house as a metaphor to explain the difference between these concepts.
+A library is like building your home from scratch, you have the choice to make your house as you wish, 
+with any architecture you like, you can sort your rooms in the way you like.
+On the other hand, Framework is like buying a new house, you don’t have to deal with building problems, 
+but you can’t choose how to sort your rooms because the house is already built.
+
+
+The Technical Difference:
+The technical difference between a framework and library lies in a term called inversion of control.
+When you use a library, you are in charge of the application flow. You choose when and where to call the library. 
+When you use a framework, the framework is in charge of the flow. It provides you with a few places to plug in your code, 
+but it calls the code you plugged in as needed.
+
+Framework Upsides:
+Usually, a framework tells us what to do. it has the best practice of doing things and provides tooling to support us.
+Examples: Angular, Vue
+These frameworks created by dedicated teams, and ship with everything you need to build large-scale applications.
+These teams provide official style guides that follow best practices. Once you learn that you’re immediately productive.
+It also means that if you want to train new teammates, it will be easy.
+
+Framework Downsides:
+A framework is built by writing a lot of code, this means longer loading time and a decrease in performance.
+Scalable architecture provides many things as we discussed above. S
+ome applications are so simple, so using a framework makes things more complicated.
+
+With the Framework, we have a lot to learn. In every version, new things added and others removed or deprecated 
+so you have to be up-to-date.
+
+Libraries Upsides:
+On the other hand, we’re the ones who lead libraries.
+Examples: React, JQuery
+
+
+Libraries focus only on how to use it, which means that the team doesn’t support libraries for global state management, 
+like HTTP, routing, forms, etc..
+And that is a choice, it gives the user the ability of picking libraries that he wants.
+That means using libraries, giving us full control of our application, you only add what you want, 
+which makes the application smoother.
+
+Libraries Downsides:
+When you are having fun making a specific architecture, it can ruin your application, so you need to take care of this.
+That’s why some people choose Angular or Vue because they don’t want to risk time and money building their own rules. 
+They simply learn the framework’s rules and focus on playing the game.
+
+Conclusion:
+You tell libraries what to do, frameworks tell you what to do.
+Overall, frameworks are more opinionated and libraries are more flexible. 
+Both patterns of abstraction have their place in the world of programming, and while neither is inherently better, 
+it’s important to determine which is appropriate for the problem you’re solving.
+
+
+
+
+
+(3) What is CDN(Content Delivery Network)? Why do we use it?
+
+CDN(Content Delivery Network) is a server network system that directs users who want to access a website to servers located geographically closest to them 
+and enables them to receive service through these servers.
+This system, which is a distribution infrastructure provides you to reach your visitors quickly by keeping cache a copy of frequently 
+requested content on your website. In this way, it helps you to be able to manage visitor traffic of your website better.
+CDN allows fast transfer of things required for internet content to be uploaded, including HTML pages, 
+JavaScript files, style pages, images and videos.
+
+Anyone with a website or mobile application that can be requested by multiple users at the same time can benefit from CDN. 
+It is especially useful for large, complex websites with users spread around the world, and websites or mobile apps with lots 
+of dynamic content. Here are some of the benefits CDN can provide to your website:
+
+(i) Faster load times for web and mobile users
+(ii) Quickly scalable during peak traffic times
+(iii) Ensures site stability, minimizing the risk of traffic spikes at the origin
+(iv) Reduces infrastructure costs due to offloading of traffic (less load on the resource better site performance
+
+
+
+
+
+(4) Why is React known as React?
+
+React was developed for applications (Facebook) that have constantly changing data. 
+Since React is a front-end framework or the “View” in MVC, this means that as the user clicks around and changes the app’s data, 
+the view should “react” or change with those user events. User events being mouse clicks, typing, submitting a form.
+React has a concept of Virtual DOM.Now say whenever anything is changed in a particular component that component changes. 
+Now these changes are not pushed to the DOM directly, but instead it is pushed to something called VirtualDOM. 
+Now at this point there is a diff which occurs between VirtualDOM and real HTML DOM and changes are pushed to the realDOM. 
+This is what makes it fast
+
+
+
+
+
+(5) What is crossorigin in script tag?
+
+The HTML <script> crossorigin Attribute is used for loading an external script into their domain from a third party server or 
+another domain with the support of HTTP CORS Request. 
+This attribute is used to protect sensitive information from the third party when fetching out the results.
+
+Cross-Origin Resource Sharing(CORS) is a tool that allows web pages requesting for resources from another domain that is outside 
+of their own domain. It is also used for managing cross-origin requests which is a request for a resource from an outside domain.
+
+Syntax:
+<script crossorigin="anonymous | use-credentials">
+
+Attribute Values:
+anonymous: It has a default value. It defines a CORS request will be sent without passing the credentials information.
+use-credentials: A cross-origin request will be sent with credentials, cookies, and certificate.
+Note: This attribute is only valid for use if we try to fetch the resources from the third party domain. 
+
+
+
+
+(6) What is diference between React and ReactDOM?
+React library is responsible for creating views and ReactDOM library is responsible to actually render UI in the browser.
+When building web applications in React, you use two packages—react and react-dom.
+The react package holds the react source for components, state, props and all the code that is react.
+The react-dom package as the name implies is the glue between React and the DOM. 
+Often, you will only use it for one single thing: mounting your application to the index.html file with ReactDOM.render().
+The reason React and ReactDOM were split into two libraries was due to the arrival of React Native (A react platform for mobile development).
+React components are such a great way to organize UI that it has now spread to mobile to react is used in web and in mobile. react-dom is used only in web apps.
+
+
+
+
+
+(7) What is difference between react.development.js and react.production.js files via CDN?
+The goals of development and production builds differ greatly.
+In development, we want strong source mapping and a localhost server with live reloading or hot module replacement.
+In production, our goals shift to a focus on minified bundles, lighter weight source maps, and optimized assets to improve load time.
+The production and development build come into the picture just because of performance impact in real life deployed the application. 
+Also, it happens that the location where the application is deployed is another continent altogether, 
+so rendering development build js files on UI will take a hell of a time as compared to production version which is very crisp, 
+compact, compressed, uglified for better user experience and loading on UI.
+
+
+
+
+
+(8) What is async and defer in the Script Tag?
+Async and Difer are Boolean attributes which are used in Script tag to load the external scripts efficiently into our Webpage.
+<script>
+Let's start by defining what <script> without any attributes does. The HTML
+file will be parsed until the script file is hit, at that point parsing will stop and a
+request will be made to fetch the file (if it's external). The script will then be
+executed before parsing is resumed.
+<script async>
+async downloads the script file during HTML parsing and will pause the HTML
+parser to execute it when it has finished downloading and execution.
+Async Scripts does not guarantee the order of Scripts Execution.
+<script defer>
+defer downloads the script file during HTML parsing and will only execute it after
+the HTML parser has completed. Defer Scripts are also guaranteed to execute in
+the order that they appear in the document.
+
+
+
