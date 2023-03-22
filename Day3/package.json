@@ -1,0 +1,28 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "description": "Laying the Foundation",
+  "scripts": {
+    "start": "parcel Index.html",
+    "build": "parcel build Index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanguduSrinivasu/NamasteReact.git"
+  },
+  "author": "Tangudu Srinivasu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanguduSrinivasu/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/TanguduSrinivasu/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
